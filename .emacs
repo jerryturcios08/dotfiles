@@ -16,6 +16,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+ '(custom-safe-themes
+   (quote
+    ("f8cf128fa0ef7e61b5546d12bb8ea1584c80ac313db38867b6e774d1d38c73db" "a4d11382b57e6c08c26db2793670642b1fbb828e642cf41ae58685b4e37aeca9" default)))
  '(package-selected-packages (quote (helm evil-visual-mark-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -27,10 +32,11 @@
 (require 'evil)
 
 (evil-mode t)
-(load-theme 'dracula t)
+(load-theme 'nord t)
 (menu-bar-mode -1)
 
 (if (display-graphic-p)
     (progn
       (toggle-scroll-bar -1)
       (tool-bar-mode -1)))
+

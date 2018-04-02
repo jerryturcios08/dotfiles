@@ -18,3 +18,7 @@ export PATH="/anaconda3/bin:$PATH"
 
 # Setting PATH for Qt 5.10
 export PATH=$PATH:~/Development/QtFramework/5.10.1/clang_64/bin
+
+# Open files in Chrome
+alias chrome="open -a 'Google Chrome'"
+
