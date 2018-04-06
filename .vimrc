@@ -33,7 +33,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'mbbill/undotree'
-Plugin 'dracula/vim'
 Plugin 'shougo/vimproc'
 Plugin 'shougo/vimshell'
 Plugin 'benmills/vimux'
@@ -43,6 +42,7 @@ Plugin 'qpkorr/vim-bufkill'
 Plugin 'vhdirk/vim-cmake'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sleuth'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'terryma/vim-multiple-cursors'
@@ -61,7 +61,7 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_theme='dracula'
+let g:airline_theme='nord'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for NERDTree plugin below ----!
@@ -191,9 +191,7 @@ endif
 " !================================== Colors ================================!
 
 
-colorscheme dracula                     " Sets default color
-hi VertSplit ctermbg=236 ctermfg=236    " Sets vertical split color
-hi NonText ctermfg=60                   " Sets the color of the tilde
+colorscheme nord                        " Sets default color
 
 
 " !============================= Undo/Backup/SWP ============================!
