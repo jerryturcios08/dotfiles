@@ -78,6 +78,7 @@ let g:SuperTabCrMapping = 0
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+let g:syntastic_java_checkers = []
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -144,6 +145,7 @@ set encoding=utf-8                      " Sets the default encoding
 set guioptions=                         " Removes scrollbars in MacVim
 set guioptions-=T                       " Makes MacVim's toolbar visible
 set laststatus=2                        " Makes the status line visible
+set listchars=eol:¬,space:·,tab:»\      " Enables whitespace characters
 set guifont=Monaco:h12                  " Manually set font
 set wildmenu                            " Turn on wild menu
 set wildignore=*.o,*~,*.pyc             " Ignored compiled files
