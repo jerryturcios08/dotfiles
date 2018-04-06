@@ -145,7 +145,6 @@ set encoding=utf-8                      " Sets the default encoding
 set guioptions=                         " Removes scrollbars in MacVim
 set guioptions-=T                       " Makes MacVim's toolbar visible
 set laststatus=2                        " Makes the status line visible
-set listchars=eol:¬,space:·,tab:»\      " Enables whitespace characters
 set guifont=Monaco:h12                  " Manually set font
 set wildmenu                            " Turn on wild menu
 set wildignore=*.o,*~,*.pyc             " Ignored compiled files
@@ -193,7 +192,8 @@ endif
 " !================================== Colors ================================!
 
 
-colorscheme nord                        " Sets default color
+" Sets default color
+colorscheme nord
 
 
 " !============================= Undo/Backup/SWP ============================!
