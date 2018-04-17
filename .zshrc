@@ -92,5 +92,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 # Open files in chrome
 alias chrome="open -a 'Google Chrome'"
+
+# Path to bin for MongoDB
+export PATH=~/Development/Database/mongodb-osx-x86_64-3.6.4/bin:$PATH
