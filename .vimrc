@@ -193,7 +193,7 @@ endif
 
 
 " Sets default color
-colorscheme nord
+colorscheme nord 
 
 
 " !============================= Undo/Backup/SWP ============================!

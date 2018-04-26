@@ -32,7 +32,7 @@
 (require 'evil)
 
 (evil-mode t)
-(load-theme 'nord t)
+(load-theme 'wheatgrass t)
 (menu-bar-mode -1)
 
 (if (display-graphic-p)
