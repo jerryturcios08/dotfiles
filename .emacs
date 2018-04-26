@@ -32,11 +32,9 @@
 (require 'evil)
 
 (evil-mode t)
-(load-theme 'wheatgrass t)
 (menu-bar-mode -1)
 
 (if (display-graphic-p)
     (progn
       (toggle-scroll-bar -1)
       (tool-bar-mode -1)))
-
