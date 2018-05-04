@@ -61,7 +61,7 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_theme='nord'
+let g:airline_theme='powerlineish'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for NERDTree plugin below ----!
@@ -194,6 +194,9 @@ endif
 
 " Sets default color
 colorscheme nord 
+highlight VertSplit ctermfg=233 ctermbg=233
+highlight Pmenu ctermfg=white ctermbg=233
+highlight PmenuSel ctermfg=0 ctermbg=7
 
 
 " !============================= Undo/Backup/SWP ============================!
@@ -204,3 +207,4 @@ set undodir=$HOME/.vim/undo             " Need a directory in ./vim called undo
 set undolevels=1000                     " Maximum number of changes
 set undoreload=10000                    " Maximum number lines to save for undo
 set noswapfile                          " No swap file
+

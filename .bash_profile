@@ -22,3 +22,5 @@ export PATH=$PATH:~/Development/QtFramework/5.10.1/clang_64/bin
 # Open files in Chrome
 alias chrome="open -a 'Google Chrome'"
 
+# MySQL configuration
+export PATH=${PATH}:/usr/local/mysql/bin

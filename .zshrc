@@ -98,3 +98,7 @@ alias chrome="open -a 'Google Chrome'"
 
 # Path to bin for MongoDB
 export PATH=~/Development/Database/mongodb-osx-x86_64-3.6.4/bin:$PATH
+
+# MySQL configuration
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
