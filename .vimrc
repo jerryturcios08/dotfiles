@@ -21,6 +21,7 @@ call vundle#begin()
 
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'wincent/command-t'
+Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'scrooloose/nerdtree'
@@ -33,6 +34,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'mbbill/undotree'
+Plugin 'dracula/vim'
 Plugin 'shougo/vimproc'
 Plugin 'shougo/vimshell'
 Plugin 'benmills/vimux'
@@ -61,7 +63,7 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_theme='powerlineish'
+let g:airline_theme='nord'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for NERDTree plugin below ----!
@@ -194,9 +196,6 @@ endif
 
 " Sets default color
 colorscheme nord 
-highlight VertSplit ctermfg=233 ctermbg=233
-highlight Pmenu ctermfg=white ctermbg=233
-highlight PmenuSel ctermfg=0 ctermbg=7
 
 
 " !============================= Undo/Backup/SWP ============================!
