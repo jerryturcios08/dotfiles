@@ -63,7 +63,7 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_theme='nord'
+let g:airline_theme='distinguished'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for NERDTree plugin below ----!
@@ -195,7 +195,7 @@ endif
 
 
 " Sets default color
-colorscheme nord 
+colorscheme monokai_pro 
 
 
 " !============================= Undo/Backup/SWP ============================!
