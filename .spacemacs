@@ -321,6 +321,9 @@ you should place your code here."
    ;; ... other configurations...
    dotspacemacs-themes '(nord)))
 
+(set-face-background 'vertical-border "MediumPurple4")
+(set-face-foreground 'vertical-border (face-background 'vertical-border))
+
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (custom-set-variables

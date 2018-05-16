@@ -24,3 +24,5 @@ alias chrome="open -a 'Google Chrome'"
 
 # MySQL configuration
 export PATH=${PATH}:/usr/local/mysql/bin
+
+export PATH="$HOME/.cargo/bin:$PATH"
