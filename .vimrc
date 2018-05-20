@@ -208,6 +208,9 @@ endif
 " Sets default color
 colorscheme codedark 
 
+" Sets endtag coloring for jsx files
+hi link xmlEndTag xmlTag
+
 
 " !============================= Undo/Backup/SWP ============================!
 
