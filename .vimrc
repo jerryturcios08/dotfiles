@@ -25,8 +25,8 @@ Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'arcticicestudio/nord-vim'
 Plugin 'powerline/powerline'
+Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'ervandew/supertab'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'godlygeek/tabular'
@@ -34,22 +34,24 @@ Plugin 'majutsushi/tagbar'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'mbbill/undotree'
-Plugin 'dracula/vim'
 Plugin 'shougo/vimproc'
-Plugin 'shougo/vimshell'
 Plugin 'benmills/vimux'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'vhdirk/vim-cmake'
+Plugin 'tomasiser/vim-code-dark'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-sleuth'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-sleuth'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
+Plugin 'posva/vim-vue'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'Valloric/YouCompleteMe'
@@ -63,8 +65,17 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_theme='nord'
+let g:airline_theme='codedark'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
+
+" !---- Settings for Emmet plugin below ----!
+
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
 
 " !---- Settings for NERDTree plugin below ----!
 
@@ -195,7 +206,7 @@ endif
 
 
 " Sets default color
-color nord 
+colorscheme codedark 
 
 
 " !============================= Undo/Backup/SWP ============================!
