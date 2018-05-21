@@ -211,6 +211,9 @@ colorscheme codedark
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
 
+" Sets the vertical split color
+hi VertSplit ctermfg=235 ctermbg=235 guifg=#262626 guibg=#262626
+
 
 " !============================= Undo/Backup/SWP ============================!
 
@@ -220,3 +223,4 @@ set undodir=$HOME/.vim/undo             " Need a directory in ./vim called undo
 set undolevels=1000                     " Maximum number of changes
 set undoreload=10000                    " Maximum number lines to save for undo
 set noswapfile                          " No swap file
+
