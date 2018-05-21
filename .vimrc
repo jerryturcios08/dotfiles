@@ -60,18 +60,18 @@ call vundle#end()
 
 " !---- Settings for Airline plugin below ----!
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#tabline#formatter='unique_tail'
-let g:airline#extensions#tmuxline#enabled = 1
-let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#tmuxline#enabled=1
+let g:airline#extensions#whitespace#enabled=0
 let g:airline_theme='codedark'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for Emmet plugin below ----!
 
 let g:user_emmet_leader_key='<Tab>'
-let g:user_emmet_settings = {
+let g:user_emmet_settings={
   \  'javascript.jsx' : {
     \      'extends' : 'jsx',
     \  },
@@ -83,25 +83,25 @@ let NERDTreeWinSize=30
 
 " !---- Settings for Supertab plugin below ----!
 
-let g:SuperTabDefaultCompletionType = '<C-n>'
-let g:SuperTabCrMapping = 0
+let g:SuperTabDefaultCompletionType='<C-n>'
+let g:SuperTabCrMapping=0
 
 " !---- Settings for Syntastic plugin below ----!
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_java_checkers = []
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_java_checkers=[]
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
 let g:syntastic_disabled_filetypes=['gitcommit']
-let g:syntastic_error_symbol = '✗✗'
-let g:syntastic_style_error_symbol = '✠✠'
-let g:syntastic_warning_symbol = '∆∆'
-let g:syntastic_style_warning_symbol = '≈≈'
-let g:syntastic_quiet_messages = {
+let g:syntastic_error_symbol='✗✗'
+let g:syntastic_style_error_symbol='✠✠'
+let g:syntastic_warning_symbol='∆∆'
+let g:syntastic_style_warning_symbol='≈≈'
+let g:syntastic_quiet_messages={
         \ "!level":  "errors",
         \ "type":    "style",
         \ "regex":   '\m\[C03\d\d\]',
@@ -110,13 +110,14 @@ let g:syntastic_quiet_messages = {
 " !---- Settings for Tagbar plugin below ----!
 
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
+let g:tagbar_sort=0                            " Sort tags by their order
 let g:tagbar_width=30                          " Default is 40, seems too wide
 noremap <silent> <Leader>y :TagbarToggle       " Display panel with y (or ,y)
 
 " !---- Settings for Tmuxline plugin below ----!
 
-let g:tmuxline_preset = 'powerline'
-let g:tmuxline_powerline_separators = 0
+let g:tmuxline_preset='powerline'
+let g:tmuxline_powerline_separators=0
 
 " !---- Settings for UltiSnips plugin below ----!
  
@@ -127,9 +128,9 @@ let g:UltiSnipsEditSplit="vertical"
 
 " !---- Settings for YouCompleteMe plugin below ----!
 
-let g:ycm_key_list_select_completion = ['<C-j>', '<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+let g:ycm_key_list_select_completion=['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion=['<C-k>', '<C-p>', '<Up>']
+let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
 set completeopt-=preview
 
 " !---- End of Plugin + Configuration Section ----!
@@ -223,4 +224,3 @@ set undodir=$HOME/.vim/undo             " Need a directory in ./vim called undo
 set undolevels=1000                     " Maximum number of changes
 set undoreload=10000                    " Maximum number lines to save for undo
 set noswapfile                          " No swap file
-
