@@ -214,6 +214,8 @@ hi link xmlEndTag xmlTag
 
 " Sets color of the vertical split
 hi VertSplit ctermfg=233 ctermbg=233 guifg=#121212 guibg=#121212
+" Sets color of the visual block
+hi Visual ctermfg=15 ctermbg=60
 
 
 " !============================= Undo/Backup/SWP ============================!
