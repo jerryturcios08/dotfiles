@@ -25,6 +25,7 @@ Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'arcticicestudio/nord-vim'
 Plugin 'powerline/powerline'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'ervandew/supertab'
@@ -206,10 +207,13 @@ endif
 
 
 " Default colorscheme
-"
+colorscheme nord
 
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
+
+" Sets color of the vertical split
+hi VertSplit ctermfg=233 ctermbg=233 guifg=#121212 guibg=#121212
 
 
 " !============================= Undo/Backup/SWP ============================!
