@@ -40,7 +40,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'vhdirk/vim-cmake'
-Plugin 'tomasiser/vim-code-dark'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
@@ -65,7 +64,7 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled=1
 let g:airline#extensions#whitespace#enabled=0
-let g:airline_theme='codedark'
+let g:airline_theme='powerlineish'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for Emmet plugin below ----!
@@ -206,14 +205,11 @@ endif
 " !================================== Colors ================================!
 
 
-" Sets default color
-colorscheme codedark 
+" Default colorscheme
+"
 
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
-
-" Sets the vertical split color
-hi VertSplit ctermfg=235 ctermbg=235 guifg=#262626 guibg=#262626
 
 
 " !============================= Undo/Backup/SWP ============================!
