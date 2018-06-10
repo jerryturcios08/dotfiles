@@ -25,7 +25,6 @@ Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'arcticicestudio/nord-vim'
 Plugin 'powerline/powerline'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'ervandew/supertab'
@@ -47,6 +46,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'bluz71/vim-moonfly-colors'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-sleuth'
 Plugin 'honza/vim-snippets'
@@ -65,7 +65,7 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled=1
 let g:airline#extensions#whitespace#enabled=0
-let g:airline_theme='powerlineish'
+let g:airline_theme='minimalist'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for Emmet plugin below ----!
@@ -207,15 +207,10 @@ endif
 
 
 " Default colorscheme
-colorscheme nord
+colorscheme moonfly
 
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
-
-" Sets color of the vertical split
-hi VertSplit ctermfg=233 ctermbg=233 guifg=#121212 guibg=#121212
-" Sets color of the visual block
-hi Visual ctermfg=15 ctermbg=60
 
 
 " !============================= Undo/Backup/SWP ============================!
