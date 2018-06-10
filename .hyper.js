@@ -21,7 +21,7 @@ module.exports = {
     fontWeightBold: 'bold',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgb(255,255,255)',
+    cursorColor: 'rgba(255,255,255)',
 
     // terminal text color under BLOCK cursor
     cursorAccentColor: '#000',
@@ -37,13 +37,13 @@ module.exports = {
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: 'rgb(22,21,26)',
+    backgroundColor: 'rgb(0,0,0)',
 
     // terminal selection color
     selectionColor: 'rgba(193,222,255,0.3)',
 
     // border color (window, tabs)
-    borderColor: 'rgb(22,21,26)',
+    borderColor: 'rgb(33,33,33)',
 
     // custom CSS to embed in the main window
     css: '',
