@@ -320,7 +320,7 @@ you should place your code here."
 (defun dotspacemacs/init ()
   (setq-default
    ;; ... other configurations...
-   dotspacemacs-themes '(nord)))
+   dotspacemacs-themes '(dracula)))
 
 (set-face-background 'vertical-border "MediumPurple4")
 (set-face-foreground 'vertical-border (face-background 'vertical-border))
