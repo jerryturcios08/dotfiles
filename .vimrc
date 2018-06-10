@@ -40,13 +40,13 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'vhdirk/vim-cmake'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'bluz71/vim-moonfly-colors'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-sleuth'
 Plugin 'honza/vim-snippets'
@@ -207,10 +207,13 @@ endif
 
 
 " Default colorscheme
-colorscheme moonfly
+colorscheme dracula
 
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
+
+" Sets the color of the vertical split
+hi VertSplit ctermfg=235 ctermbg=235 guifg=#262626 guibg=#262626
 
 
 " !============================= Undo/Backup/SWP ============================!
