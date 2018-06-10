@@ -212,8 +212,14 @@ colorscheme dracula
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
 
+" Below are my own predefined color configurations
+" ------------------------------------------------
+
 " Sets the color of the vertical split
-hi VertSplit ctermfg=235 ctermbg=235 guifg=#262626 guibg=#262626
+hi VertSplit ctermfg=236 ctermbg=236 guifg=#262626 guibg=#262626
+
+" Stes the color of the tilde
+hi NonText ctermfg=60 guifg=#5f5f87
 
 
 " !============================= Undo/Backup/SWP ============================!
