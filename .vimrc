@@ -218,8 +218,14 @@ hi link xmlEndTag xmlTag
 " Sets the color of the vertical split
 hi VertSplit ctermfg=236 ctermbg=236 guifg=#262626 guibg=#262626
 
-" Stes the color of the tilde
+" Sets the color of the tilde
 hi NonText ctermfg=60 guifg=#5f5f87
+
+" Sets the autocomplete menu color
+hi Pmenu ctermfg=231 ctermbg=61 guifg=#ffffff guibg=#5f5faf
+
+" Sets the autocomplete selection color
+hi PmenuSel ctermfg=0 ctermbg=84 guifg=#000000 guibg=#5fff87
 
 
 " !============================= Undo/Backup/SWP ============================!
