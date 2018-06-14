@@ -128,9 +128,13 @@ let g:UltiSnipsEditSplit="vertical"
 
 " !---- Settings for YouCompleteMe plugin below ----!
 
+let g:ycm_filetype_specific_completion_to_disable = {
+      \ 'gitcommit': 1
+      \}
 let g:ycm_key_list_select_completion=['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion=['<C-k>', '<C-p>', '<Up>']
 let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
+let g:ycm_show_diagnostics_ui=0
 set completeopt-=preview
 
 " !---- End of Plugin + Configuration Section ----!
