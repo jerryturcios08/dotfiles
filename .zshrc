@@ -129,3 +129,4 @@ export PATH=$COCOS_X_ROOT:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 export COCOS_TEMPLATES_ROOT="/Users/jerryturcios08/Development/Frameworks/cocos2d-x-3.17/templates"
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
