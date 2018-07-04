@@ -106,27 +106,5 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 # Rust directory
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT="/Users/jerryturcios08/Downloads/cocos2d-x-3.17/tools/cocos2d-console/bin"
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT="/Users/jerryturcios08/Downloads"
-export PATH=$COCOS_X_ROOT:$PATH
-
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT="/Users/jerryturcios08/Downloads/cocos2d-x-3.17/templates"
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT="/Users/jerryturcios08/Development/Frameworks/cocos2d-x-3.17/tools/cocos2d-console/bin"
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT="/Users/jerryturcios08/Development/Frameworks"
-export PATH=$COCOS_X_ROOT:$PATH
-
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT="/Users/jerryturcios08/Development/Frameworks/cocos2d-x-3.17/templates"
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-
+# Calls the emsdk env script for WebAssembly projects
+. /Users/jerryturcios08/Development/Toolsets/emsdk/emsdk_env.sh
