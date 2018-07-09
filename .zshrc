@@ -106,5 +106,3 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 # Rust directory
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# Calls the emsdk env script for WebAssembly projects
-. /Users/jerryturcios08/Development/Toolsets/emsdk/emsdk_env.sh

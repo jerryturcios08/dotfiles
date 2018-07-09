@@ -24,6 +24,7 @@ Plugin 'wincent/command-t'
 Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/goyo.vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'powerline/powerline'
 Plugin 'cakebaker/scss-syntax.vim'
@@ -40,7 +41,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'vhdirk/vim-cmake'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
@@ -65,7 +65,7 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled=1
 let g:airline#extensions#whitespace#enabled=0
-let g:airline_theme='minimalist'
+let g:airline_theme='gruvbox'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for Emmet plugin below ----!
@@ -211,26 +211,17 @@ endif
 " !================================== Colors ================================!
 
 
+" Gruvbox contrast
+let g:gruvbox_contrast_dark='hard'
+
 " Default colorscheme
-colorscheme dracula
+colorscheme gruvbox 
+
+set background=dark
+let g:gruvbox_italic=1
 
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
-
-" Below are my own predefined color configurations
-" ------------------------------------------------
-
-" Sets the color of the vertical split
-hi VertSplit ctermfg=236 ctermbg=236 guifg=#262626 guibg=#262626
-
-" Sets the color of the tilde
-hi NonText ctermfg=60 guifg=#5f5f87
-
-" Sets the autocomplete menu color
-hi Pmenu ctermfg=231 ctermbg=61 guifg=#ffffff guibg=#5f5faf
-
-" Sets the autocomplete selection color
-hi PmenuSel ctermfg=0 ctermbg=84 guifg=#000000 guibg=#5fff87
 
 
 " !============================= Undo/Backup/SWP ============================!
