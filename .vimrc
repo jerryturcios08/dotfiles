@@ -24,7 +24,6 @@ Plugin 'wincent/command-t'
 Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/goyo.vim'
-Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'powerline/powerline'
 Plugin 'cakebaker/scss-syntax.vim'
@@ -42,6 +41,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'vhdirk/vim-cmake'
 Plugin 'tpope/vim-commentary'
+Plugin 'tomasiser/vim-code-dark'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'pangloss/vim-javascript'
@@ -65,7 +65,7 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled=1
 let g:airline#extensions#whitespace#enabled=0
-let g:airline_theme='gruvbox'
+let g:airline_theme='codedark'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for Emmet plugin below ----!
@@ -211,14 +211,8 @@ endif
 " !================================== Colors ================================!
 
 
-" Gruvbox contrast
-let g:gruvbox_contrast_dark='hard'
-
 " Default colorscheme
-colorscheme gruvbox 
-
-set background=dark
-let g:gruvbox_italic=1
+colorscheme codedark 
 
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
