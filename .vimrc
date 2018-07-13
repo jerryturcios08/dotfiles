@@ -65,7 +65,7 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled=1
 let g:airline#extensions#whitespace#enabled=0
-let g:airline_theme='codedark'
+" let g:airline_theme='codedark'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for Emmet plugin below ----!
@@ -212,7 +212,7 @@ endif
 
 
 " Default colorscheme
-colorscheme codedark 
+" colorscheme codedark 
 
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
