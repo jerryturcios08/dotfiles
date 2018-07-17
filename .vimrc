@@ -187,7 +187,7 @@ set number                              " Line numbers
 set autoindent                          " Autoindent on
 set nojoinspaces                        " Don't add random white space
 set scrolloff=10                        " 10 lines above and below cursor
-set textwidth=80                        " Text width is 80
+set textwidth=0                         " Text width was 80 but is now disabled
 set bs=2                                " Fix backspacing in insert mode
 set smartindent                         " Enable smart indent
 set ruler                               " Enable ruler
@@ -195,14 +195,6 @@ set shiftwidth=2                        " Enable shift width in 2 spaces
 set tabstop=2                           " Tab is 2 spaces
 set expandtab                           " Expand the tab
 set wrap                                " Wrap lines
-highlight OverLength                           
-                \ ctermbg=red           " Over 80 lines
-                \ ctermfg=white
-                \ guibg=#8F0000
-match OverLength /\%81v.\+/             " Match overlength
-hi ColorColumn
-                \ guibg=#FF0000         " Highlight overlength
-                \ ctermbg=246
 if !has('gui_running')                  " Enables 256 color when
   set t_Co=256                          " GUI version is running
 endif
