@@ -16,8 +16,8 @@ export PATH
 # added by Anaconda3 5.1.0 installer
 export PATH="/anaconda3/bin:$PATH"
 
-# Setting PATH for Qt 5.10
-export PATH=$PATH:~/Development/QtFramework/5.10.1/clang_64/bin
+# Setting PATH for Qt 5.11
+export PATH=$PATH:~/Development/Toolsets/Qt/5.11.1/clang_64/bin
 
 # Open files in Chrome
 alias chrome="open -a 'Google Chrome'"
