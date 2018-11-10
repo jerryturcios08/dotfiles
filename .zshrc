@@ -115,4 +115,3 @@ if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc' ];
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
 source /usr/local/opt/nvm/nvm.sh
-
