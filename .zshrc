@@ -112,6 +112,9 @@ if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc' ]; then 
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Virtualwrapper configuration
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
 source /usr/local/opt/nvm/nvm.sh
+
