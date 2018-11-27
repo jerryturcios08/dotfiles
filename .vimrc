@@ -27,6 +27,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'powerline/powerline'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'liuchengxu/space-vim-dark'
 Plugin 'ervandew/supertab'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'godlygeek/tabular'
@@ -41,7 +42,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'vhdirk/vim-cmake'
 Plugin 'tpope/vim-commentary'
-Plugin 'tomasiser/vim-code-dark'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'pangloss/vim-javascript'
@@ -65,7 +65,7 @@ let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline#extensions#tmuxline#enabled=1
 let g:airline#extensions#whitespace#enabled=0
-" let g:airline_theme='codedark'
+let g:airline_theme='violet'
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " !---- Settings for Emmet plugin below ----!
@@ -204,7 +204,12 @@ endif
 
 
 " Default colorscheme
-" colorscheme codedark 
+colorscheme space-vim-dark
+hi Comment cterm=italic
+hi Normal     ctermbg=NONE guibg=NONE
+hi LineNr     ctermbg=NONE guibg=NONE
+hi SignColumn ctermbg=NONE guibg=NONE
+hi Comment guifg=#5C6370 ctermfg=59
 
 " Sets endtag coloring for jsx files
 hi link xmlEndTag xmlTag
@@ -218,3 +223,4 @@ set undodir=$HOME/.vim/undo             " Need a directory in ./vim called undo
 set undolevels=1000                     " Maximum number of changes
 set undoreload=10000                    " Maximum number lines to save for undo
 set noswapfile                          " No swap file
+
