@@ -106,7 +106,6 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 # Rust directory
 export PATH="$HOME/.cargo/bin:$PATH"
 
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -116,5 +115,14 @@ if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc' ];
 # Virtualwrapper configuration
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
-source /usr/local/opt/nvm/nvm.sh
+
+# NVM configuration
+#export NVM_DIR="$HOME/.nvm"
+#. "/usr/local/opt/nvm/nvm.sh"
+
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+# Ruby configuration
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
 
