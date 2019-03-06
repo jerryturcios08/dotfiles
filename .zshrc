@@ -98,19 +98,13 @@ alias chrome="open -a 'Google Chrome'"
 
 # Path to bin for MongoDB
 export PATH=~/Development/Database/mongodb-osx-x86_64-3.6.4/bin:$PATH
-
+export PATH=~/ngrok:$PATH
 # MySQL configuration
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 # Rust directory
 export PATH="$HOME/.cargo/bin:$PATH"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Virtualwrapper configuration
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
@@ -126,3 +120,14 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Adds composer to the path
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+export PATH="/usr/local/Cellar/php/7.3.2/bin:$PATH"

@@ -24,6 +24,7 @@ Plugin 'wincent/command-t'
 Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/goyo.vim'
+Plugin 'sbdchd/neoformat'
 Plugin 'scrooloose/nerdtree'
 Plugin 'powerline/powerline'
 Plugin 'cakebaker/scss-syntax.vim'
@@ -48,6 +49,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'prettier/vim-prettier'
 Plugin 'tpope/vim-sleuth'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
@@ -154,6 +156,8 @@ set secure                              " Disable unsafe commands in .vimrc
 syntax on                               " Enable syntax
 map <C-J> :next <CR>                    " Switch between files using ctrl + l
 map <C-K> :prev <CR>                    " Switch between files using ctrl + h
+xnoremap <somekey>  :m-2<CR>            " move selected lines up one line
+xnoremap <otherkey> :m'>+<CR>           " move selected lines down one line
 
 
 " !=============================== VIM Interface ============================!
