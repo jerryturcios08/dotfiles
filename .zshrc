@@ -120,14 +120,12 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+# Adds composer to the path
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/Cellar/php/7.3.2/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-# Adds composer to the path
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-
-export PATH="/usr/local/Cellar/php/7.3.2/bin:$PATH"
