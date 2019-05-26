@@ -23,20 +23,15 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'wincent/command-t'
 Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
-Plugin 'junegunn/goyo.vim'
-Plugin 'sbdchd/neoformat'
 Plugin 'scrooloose/nerdtree'
 Plugin 'powerline/powerline'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'liuchengxu/space-vim-dark'
 Plugin 'ervandew/supertab'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'SirVer/ultisnips'
-Plugin 'mbbill/undotree'
-Plugin 'shougo/vimproc'
 Plugin 'benmills/vimux'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -48,9 +43,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'matze/vim-move'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'prettier/vim-prettier'
-Plugin 'tpope/vim-sleuth'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
 Plugin 'posva/vim-vue'
@@ -78,6 +73,14 @@ let g:user_emmet_settings={
     \      'extends' : 'jsx',
     \  },
   \}
+
+" !---- Settigs for the move plugin ----!
+
+let g:move_map_keys = 0
+vmap <C-j> <Plug>MoveBlockDown
+vmap <C-k> <Plug>MoveBlockUp
+nmap <A-j> <Plug>MoveLineDown
+nmap <A-k> <Plug>MoveLineUp
 
 " !---- Settings for NERDTree plugin below ----!
 
@@ -227,4 +230,3 @@ set undodir=$HOME/.vim/undo             " Need a directory in ./vim called undo
 set undolevels=1000                     " Maximum number of changes
 set undoreload=10000                    " Maximum number lines to save for undo
 set noswapfile                          " No swap file
-
