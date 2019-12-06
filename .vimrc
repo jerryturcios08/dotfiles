@@ -21,6 +21,7 @@ call vundle#begin()
 
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'wincent/command-t'
+Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'nikvdp/ejs-syntax'
 Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/nerdtree'
@@ -31,15 +32,17 @@ Plugin 'ervandew/supertab'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'edkolev/tmuxline.vim'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'benmills/vimux'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'vhdirk/vim-cmake'
 Plugin 'tpope/vim-commentary'
+Plugin 'thosakwe/vim-flutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'jparise/vim-graphql'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
@@ -47,12 +50,11 @@ Plugin 'matze/vim-move'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'prettier/vim-prettier'
 Plugin 'honza/vim-snippets'
-Plugin 'styled-components/vim-styled-components'
 Plugin 'tpope/vim-surround'
 Plugin 'posva/vim-vue'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'HerringtonDarkholme/yats.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -146,6 +148,7 @@ set completeopt-=preview
 
 " !---- End of Plugin + Configuration Section ----!
 
+autocmd BufEnter * :syntax sync fromstart
 set nocompatible                        " be iMproved, required
 filetype off                            " required
 set noshowmode                          " Disables the default mode display

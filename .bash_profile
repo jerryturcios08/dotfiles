@@ -1,16 +1,3 @@
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-#PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-#export PATH
-
-# Setting PATH for Python 2.7
-# The original version is saved in .bash_profile.pysave
-#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-#export PATH
-
-# added by Anaconda3 5.1.0 installer
-export PATH="/anaconda3/bin:$PATH"
-
 # Open files in Chrome
 alias chrome="open -a 'Google Chrome'"
 
@@ -23,3 +10,15 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Ruby configuration
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+# NVM configuration
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Deno configuration
+export DENO_INSTALL="/Users/jerryturcios08/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
+export ANDROID_HOME=/usr/local/share/android-sdk
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk

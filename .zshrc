@@ -99,6 +99,7 @@ alias chrome="open -a 'Google Chrome'"
 # Path to bin for MongoDB
 export PATH=~/Development/Database/mongodb-osx-x86_64-3.6.4/bin:$PATH
 export PATH=~/ngrok:$PATH
+
 # MySQL configuration
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
@@ -110,11 +111,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
 
-# NVM configuration
-#export NVM_DIR="$HOME/.nvm"
-#. "/usr/local/opt/nvm/nvm.sh"
-
-export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/bin/node/bin:$PATH"
 
 # Ruby configuration
 eval "$(rbenv init -)"
@@ -122,7 +119,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Adds composer to the path
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="/usr/local/Cellar/php/7.3.2/bin:$PATH"
+export PATH="/usr/local/Cellar/php/7.3.10/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jerryturcios08/Downloads/google-cloud-sdk/path.zsh.inc'; fi
@@ -132,3 +129,17 @@ if [ -f '/Users/jerryturcios08/Downloads/google-cloud-sdk/completion.zsh.inc' ];
 
 # added by travis gem
 [ -f /Users/jerryturcios08/.travis/travis.sh ] && source /Users/jerryturcios08/.travis/travis.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.pub-cache/bin:$PATH"
+
+# NVM configuration
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+###-tns-completion-start-###
+if [ -f /Users/jerryturcios08/.tnsrc ]; then 
+    source /Users/jerryturcios08/.tnsrc 
+fi
+###-tns-completion-end-###
