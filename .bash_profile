@@ -5,8 +5,6 @@ alias chrome="open -a 'Google Chrome'"
 export PATH=${PATH}:/usr/local/mysql/bin
 
 # Cargo path
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # Ruby configuration
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
